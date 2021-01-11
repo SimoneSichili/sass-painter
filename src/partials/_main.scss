@@ -2,11 +2,12 @@ main {
     width: 100%;
 }
 
+// jumbotron
 .jumbotron {
     width: 100%;
     height: 460px;
     padding-top: 20px;
-    background-color: #ccc;
+    background-color: #1D343C;
     // background-image: url("../img/hero-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -74,3 +75,37 @@ main {
         }
     }
 }
+// jumbotron
+
+// subnav
+.subnav {
+    width: 100%;
+    height: 55px;
+    background-color: $subNavColor;
+    text-transform: uppercase;
+    ul {
+        display: flex;
+        height: 100%;
+        line-height: 55px;
+        li {
+            height: 100%;
+            .active {
+                background-color: #fff;
+                border-bottom: 2px solid black;
+                pointer-events: none;
+            }
+            a {
+                display: inline-block;
+                height: 100%;
+                padding: 0 15px;
+                font-size: 18px;
+                color: $navGrey;
+                text-decoration: none;
+                &:hover {
+                    background-color: $navHover;
+                }
+            }
+        }
+    }
+}
+// subnav
