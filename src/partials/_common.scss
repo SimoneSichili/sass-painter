@@ -11,3 +11,31 @@
     max-width: 1170px;
     margin: auto;
 }
+
+.btn {
+    display: inline-block;
+    height: 60px;
+    margin: 30px 0;
+    padding: 10px 15px;
+    background-color: #5B5C5A;
+    color: #fff;
+    text-decoration: none;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .btn-left, {
+        float: left;
+        padding-right: 10px;
+        border-right: 1px solid #fff;
+    }
+    .btn-right, {
+        float: left;   
+        padding-left: 10px;
+        i {
+            line-height: 35px;
+            font-size: 24px;
+        }
+    }
+}

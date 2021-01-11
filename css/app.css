@@ -12,6 +12,38 @@
   margin: auto;
 }
 
+.btn {
+  display: inline-block;
+  height: 60px;
+  margin: 30px 0;
+  padding: 10px 15px;
+  background-color: #5B5C5A;
+  color: #fff;
+  text-decoration: none;
+}
+.btn::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn .btn-left {
+  float: left;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.btn .btn-right {
+  float: left;
+  padding-left: 10px;
+}
+.btn .btn-right i {
+  line-height: 35px;
+  font-size: 24px;
+}
+
+header {
+  width: 100%;
+}
+
 .header-top {
   width: 100%;
   height: 40px;
@@ -84,4 +116,45 @@
   margin-left: 5px;
   font-size: 8px;
   color: #bbb;
+}
+
+main {
+  width: 100%;
+}
+
+.jumbotron {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #ccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron .wrapper {
+  display: flex;
+}
+.jumbotron .wrapper .intro {
+  width: 65%;
+  padding-top: 20px;
+  padding-left: 200px;
+  color: #fff;
+}
+.jumbotron .wrapper .intro h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.jumbotron .wrapper .intro h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.jumbotron .wrapper .intro li {
+  line-height: 2;
+}
+.jumbotron .wrapper .intro li i {
+  margin-right: 5px;
+}
+.jumbotron .wrapper .price {
+  width: 35%;
+  height: 200px;
+  background-color: #101010;
 }
