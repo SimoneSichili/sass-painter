@@ -135,7 +135,7 @@ main {
   width: 100%;
   height: 460px;
   padding-top: 20px;
-  background-color: #1D343C;
+  background: url("../img/hero-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +147,7 @@ main {
 .jumbotron .wrapper .intro {
   width: 65%;
   padding-top: 20px;
-  padding-left: 200px;
+  padding-left: 230px;
   color: #fff;
 }
 .jumbotron .wrapper .intro h1 {
