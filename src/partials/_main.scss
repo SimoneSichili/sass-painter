@@ -4,13 +4,16 @@ main {
 
 .jumbotron {
     width: 100%;
+    height: 460px;
     padding-top: 20px;
     background-color: #ccc;
+    // background-image: url("../img/hero-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .wrapper {
         display: flex;
+        height: 100%;
         .intro {
             width: 65%;
             padding-top: 20px;
@@ -31,10 +34,43 @@ main {
                 }
             }
         }
-        .price {
+        .price-tab {
+            position: relative;
             width: 35%;
-            height: 200px;
+            height: 100%;
+            padding: 50px 20px;
             background-color: $headerColor;
+            img {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 80px;
+            }
+            h3 {
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            p {
+                color: $greyLink;
+                margin-bottom: 15px;
+            }
+            .limited {
+                margin-top: 40px;
+                padding: 15px;
+                background-color: $lightGrey;
+                h4 {
+                    margin-bottom: 8px;
+                }
+                p {
+                    color: black;
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+                a {
+                    text-decoration: none;
+                    color: $blueColor;
+                }
+            }
         }
     }
 }

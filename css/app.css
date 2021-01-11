@@ -12,32 +12,40 @@
   margin: auto;
 }
 
-.btn {
+.btn-grey {
   display: inline-block;
   height: 60px;
-  margin: 30px 0;
+  margin-top: 30px;
   padding: 10px 15px;
   background-color: #5B5C5A;
   color: #fff;
   text-decoration: none;
 }
-.btn::after {
+.btn-grey::after {
   content: "";
   display: table;
   clear: both;
 }
-.btn .btn-left {
+.btn-grey .btn-left {
   float: left;
   padding-right: 10px;
   border-right: 1px solid #fff;
 }
-.btn .btn-right {
+.btn-grey .btn-right {
   float: left;
   padding-left: 10px;
 }
-.btn .btn-right i {
+.btn-grey .btn-right i {
   line-height: 35px;
   font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #009CFF;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
 }
 
 header {
@@ -76,7 +84,7 @@ header {
 .header-top .wrapper ul li a i {
   margin-right: 10px;
   font-size: 14px;
-  color: dodgerblue;
+  color: #009CFF;
 }
 
 .header-bottom {
@@ -124,6 +132,7 @@ main {
 
 .jumbotron {
   width: 100%;
+  height: 460px;
   padding-top: 20px;
   background-color: #ccc;
   background-position: center;
@@ -132,6 +141,7 @@ main {
 }
 .jumbotron .wrapper {
   display: flex;
+  height: 100%;
 }
 .jumbotron .wrapper .intro {
   width: 65%;
@@ -153,8 +163,41 @@ main {
 .jumbotron .wrapper .intro li i {
   margin-right: 5px;
 }
-.jumbotron .wrapper .price {
+.jumbotron .wrapper .price-tab {
+  position: relative;
   width: 35%;
-  height: 200px;
+  height: 100%;
+  padding: 50px 20px;
   background-color: #101010;
+}
+.jumbotron .wrapper .price-tab img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+.jumbotron .wrapper .price-tab h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.jumbotron .wrapper .price-tab p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+.jumbotron .wrapper .price-tab .limited {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #F6F6F6;
+}
+.jumbotron .wrapper .price-tab .limited h4 {
+  margin-bottom: 8px;
+}
+.jumbotron .wrapper .price-tab .limited p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.jumbotron .wrapper .price-tab .limited a {
+  text-decoration: none;
+  color: #009CFF;
 }
