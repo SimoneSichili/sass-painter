@@ -4,13 +4,28 @@
     box-sizing: border-box;
     outline: none;
     list-style: none;
-    font-family: 'Lato', sans-serif;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .wrapper {
     max-width: 1170px;
     height: 100%;
     margin: auto;
+    padding: 0 15px;
+}
+
+.wrapper2 {
+    max-width: 970px;
+    height: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.wrapper3 {
+    max-width: 1570px;
+    height: 100%;
+    margin: auto;
+    padding: 0 15px;
 }
 
 .btn-grey {
@@ -39,12 +54,38 @@
             font-size: 24px;
         }
     }
+    &:hover {
+        color: darken(#fff, 10%);
+        background-color: darken(#5B5C5A, 5%);
+    }
 }
 
 .btn {
     display: inline-block;
     background-color: $blueColor;
-    padding: 10px 30px;
+    padding: 8px 40px;
     text-decoration: none;
     color: #fff;
+    &:hover {
+        background-color: lighten($blueColor, 10%);
+    }
+}
+
+.instagram {
+    background-color: $instagramBg;
+}
+.facebook {
+    background-color: $facebookBg;
+}
+.twitter {
+    background-color: $twitterBg;
+}
+.youtube {
+    background-color: $youtubeBg;
+}
+.pinterest {
+    background-color: $pinterestBg;
+}
+.rss {
+    background-color: $rssBg;
 }

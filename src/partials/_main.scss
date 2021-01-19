@@ -8,9 +8,7 @@ main {
     height: 460px;
     padding-top: 20px;
     background: url("../img/hero-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background;
     .wrapper {
         display: flex;
         height: 100%;
@@ -20,12 +18,14 @@ main {
             padding-left: 230px;
             color: #fff;
             h1 {
-                font-size: 24px;
+                font-size: 30px;
                 margin-bottom: 15px;
+                font-weight: 400;
             }
             h2 {
-                font-size: 20px;
+                font-size: 22px;
                 margin-bottom: 15px;
+                font-weight: 400;
             }
             li {
                 line-height: 2;
@@ -39,7 +39,7 @@ main {
             width: 35%;
             height: 100%;
             padding: 50px 20px;
-            background-color: $headerColor;
+            background-color: rgba(0, 0, 0, 0.8);
             img {
                 position: absolute;
                 top: 20px;
@@ -47,6 +47,8 @@ main {
                 width: 80px;
             }
             h3 {
+                font-size: 26px;
+                font-weight: 400;
                 margin-bottom: 10px;
                 color: #fff;
             }
@@ -60,6 +62,8 @@ main {
                 background-color: $lightGrey;
                 h4 {
                     margin-bottom: 8px;
+                    font-size: 18px;
+                    font-weight: 500;
                 }
                 p {
                     color: black;
@@ -108,3 +112,213 @@ main {
     }
 }
 // subnav
+
+// quick-start
+.quick-start {
+    width: 100%;
+    padding-top: 100px;
+    @include background;
+    background-image: url("../img/overview-bg.jpg");
+    text-align: center;
+    color: #fff;
+    .wrapper2 {
+        h2 {
+            @include sectionTitle;
+        }
+        p {
+            @include sectionParagraph;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            span {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+                margin-bottom: 50px;
+                line-height: 33px;
+                text-align: center;
+                border: 1px solid #aaa;
+                border-radius: 50%;
+                i {
+                    color: #aaa;
+                }
+            }
+        }
+    }
+    
+}
+// quick-start
+
+// slider
+.slider {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+    .wrapper2 {
+        h2 {
+            @include sectionTitle;
+        }
+        p {
+            @include sectionParagraph;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+// slider
+
+// bg-image1
+.bg-image1 {
+    height: 650px;
+    @include background;
+    background-image: url("../img/image-bg-01.jpg");
+    background-attachment: fixed;
+}
+// bg-image1
+
+// specs
+.specs {
+    padding: 100px 0;
+    background-color: $blackBg;
+    color: #fff;
+    text-align: center;
+    .wrapper2 {
+        h2 {
+            @include sectionTitle;
+        }
+        p {
+            @include sectionParagraph;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .wrapper {
+        margin-top: 100px;
+        .specs-row {
+            display: flex;
+            align-items: center;
+            .item {
+                width: 40%;
+                padding: 0 15px;
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .left {
+                text-align: left;
+            }
+            .right {
+                text-align: right;
+            }
+            .large {
+                width: 60%;
+            }
+            &:first-child {
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+// specs
+
+// bg-image2
+.bg-image2 {
+    height: 650px;
+    @include background;
+    background-image: url("../img/image-bg-02.jpg");
+    background-attachment: fixed;
+}
+// bg-image2
+
+// tools
+.tools {
+    padding: 80px 0;
+    text-align: center;
+    h2 {
+        @include sectionTitle;
+        margin-bottom: 80px;
+    }
+    .wrapper3 {
+        display: flex;
+        justify-content: space-between;   
+        .card {
+            position: relative;
+            width: calc((100% / 5) - 10px);
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all .5s ease-in-out;
+                }
+            }
+            h5 {
+                position: absolute;
+                bottom: 25px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 20px;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+    }
+    
+}
+// tools
+
+// brushpacks
+.brushpacks {
+    padding: 80px 0;
+    @include background;
+    background-image: url("../img/brushpacks-bg.jpg");
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .tab {
+            width: 50%;
+            padding: 100px 30px;
+            margin: 0 20px;
+            background-color: #fff;
+            text-align: center;
+            h3 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+                a {
+                    text-decoration: none;
+                    color: dodgerblue;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+// brushpacks

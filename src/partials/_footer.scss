@@ -1,0 +1,84 @@
+.footer-top {
+    padding: 60px 0 30px 0;
+    background-color: $footerTopColor;
+    .wrapper {
+        display: flex;
+        .col {
+            width: calc(100% / 4);
+            > ul {
+                list-style: none;
+                > li {
+                    h5 {
+                        font-size: 15px;
+                        font-weight: 400;
+                        margin-bottom: 15px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        color: #000;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .social-icons {
+                    margin-top: 30px;
+                    ul {
+                        display: flex;
+                        li {
+                            margin-right: 10px;
+                            .icon-bg{
+                                width: 32px;
+                                height: 32px;
+                                line-height: 32px;
+                                text-align: center;
+                                a {
+                                    color: #fff;
+                                    font-size: 20px;
+                                }
+                            }   
+                        }
+                    }      
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background-color: $footerBottomColor;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .bottom-left {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 30px;
+            }
+        }
+        .bottom-right {
+            ul {
+                display: flex;
+                font-size: 12px;
+                li {
+                    margin-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: $footerLink;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .copyright {
+                    color: #fff;
+                }
+            }
+        }
+    }    
+}
